@@ -1,0 +1,52 @@
+const mongoose=require("mongoose");
+const ProfileSchema= new mongoose.Schema({
+    user:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'user'
+    },
+    result:[
+        {
+            eventname:{
+                type:String,
+                requried:true
+            },
+            eventdescription:{
+                type:String,
+                requried:true
+            },
+            venue:{
+                type:String,
+                requried:true
+            },
+            location:{
+                type:String,
+                requried:true
+            },
+            startdate:{
+                type:String,
+                requried:true
+            },
+            enddate:{
+                type:String,
+                requried:true
+            },
+            starttime:{
+                type:String,
+                requried:true
+            },
+            endtime:{
+                type:String,
+                requried:true
+            },
+            ticket:{
+                type:String,
+                requried:true
+            },
+            date:{
+                type:Date,
+                default:Date.now
+            }
+        }],
+
+})
+module.exports=Profile=mongoose.model('profile',ProfileSchema);

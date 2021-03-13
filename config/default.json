@@ -1,0 +1,5 @@
+{
+    "mongoURI":"mongodb+srv://ursa1998:ursa1998@devconnector.ztczf.mongodb.net/devConnector?retryWrites=true&w=majority",
+    "jwtSecret":"mysecrettoken"
+ 
+}
